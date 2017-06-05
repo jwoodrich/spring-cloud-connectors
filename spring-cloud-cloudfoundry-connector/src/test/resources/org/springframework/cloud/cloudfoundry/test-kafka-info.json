@@ -1,0 +1,9 @@
+{
+	"name": "$serviceName",
+	"label": "kafka",
+	"plan": "free",
+	"tags": [ "kafka" ],
+	"credentials": {
+		"uri": "kafka://$hostname:$port/?bootstrap%2Eservers=$bootstrap"
+	}
+}

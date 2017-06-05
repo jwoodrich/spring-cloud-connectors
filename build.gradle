@@ -23,6 +23,9 @@ ext {
 	springDataMongoVersion = "1.4.3.RELEASE"
 	mongoDriverVersion = "2.11.4"
 
+	springKafkaVersion = "1.2.1.RELEASE"
+	kafkaVersion = "0.10.2.1"
+	
 	springDataRedisVersion = "1.1.1.RELEASE"
 	jedisVersion = "2.1.0"
 	lettuceVersion = "3.4.3.Final"
