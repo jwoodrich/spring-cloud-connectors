@@ -26,8 +26,8 @@ public class KafkaConnectionFactoryCreator extends	AbstractServiceConnectorCreat
 	}
 	/**
 	 * Creates Kafka connection properties from a KafkaServiceInfo.
-	 * @param serviceInfo 
-	 * @return
+	 * @param serviceInfo A KafkaServiceInfo to create properties from. 
+	 * @return The Kafka connection properties.
 	 */
 	protected Map<String, Object> createKafkaProperties(KafkaServiceInfo serviceInfo) {
 		Map<String,Object> ret=new HashMap<String,Object>(serviceInfo.getConfig());
@@ -43,7 +43,7 @@ public class KafkaConnectionFactoryCreator extends	AbstractServiceConnectorCreat
 	/**
 	 * Creates a Spring-Kafka ConsumerFactory.
 	 * @param properties The connection properties.
-	 * @return
+	 * @return The Spring-Kafka ConsumerFactory
 	 */
 	protected ConsumerFactory<?,?> createKafkaConsumerFactory(Map<String, Object> properties) {
 		return new DefaultKafkaConsumerFactory(properties);
@@ -52,7 +52,7 @@ public class KafkaConnectionFactoryCreator extends	AbstractServiceConnectorCreat
 	/**
 	 * Creates a Spring-Kafka ProducerFactory.
 	 * @param properties The connection properties.
-	 * @return
+	 * @return The Spring-Kafka ProducerFactory
 	 */
 	protected ProducerFactory<?,?> createKafkaProducerFactory(Map<String, Object> properties) {
 		return new DefaultKafkaProducerFactory(properties);
