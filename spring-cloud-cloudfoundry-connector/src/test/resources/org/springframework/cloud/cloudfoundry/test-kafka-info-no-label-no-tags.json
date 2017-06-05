@@ -1,0 +1,6 @@
+{
+	"name": "$serviceName",
+	"credentials": {
+		"uri": "kafka://$hostname:$port/?bootstrap%2Eservers=$bootstrap"
+	}
+}

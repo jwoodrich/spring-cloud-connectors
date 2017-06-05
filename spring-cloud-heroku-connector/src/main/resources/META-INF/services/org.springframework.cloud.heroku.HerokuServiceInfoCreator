@@ -1,4 +1,5 @@
 org.springframework.cloud.heroku.PostgresqlServiceInfoCreator
+org.springframework.cloud.heroku.KafkaServiceInfoCreator
 org.springframework.cloud.heroku.MysqlServiceInfoCreator
 org.springframework.cloud.heroku.MongoServiceInfoCreator
 org.springframework.cloud.heroku.AmqpServiceInfoCreator
